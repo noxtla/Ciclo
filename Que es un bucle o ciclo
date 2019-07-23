@@ -9,4 +9,13 @@ Es aquella secuencia de instrucciones que se van a repetir siempre y cuando se c
   •	Solo se ejecuta si la condicion se cumple
   •	Evalua la condicion antes del buble
   Do While
-  •	Se ejecuta una vez y despues evalua la condicion. Es muy utilizado en menus
+  •	Se ejecuta una vez y despues evalua la condicion. Es muy utilizado en menus.
+  
+  For 
+  •	Inicializador 
+  •	Condicion
+  •	Aumento / Decremento de la variable de iteracion
+  
+  •	Bloque de instrucciones
+  
+  
