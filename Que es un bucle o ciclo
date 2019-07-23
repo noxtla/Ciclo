@@ -7,5 +7,6 @@ Es aquella secuencia de instrucciones que se van a repetir siempre y cuando se c
 
   While
   •	Solo se ejecuta si la condicion se cumple
+  •	Evalua la condicion antes del buble
   Do While
-  •	Se ejecuta una vez y despues verifica la condicion. Es muy utilizado en menus
+  •	Se ejecuta una vez y despues evalua la condicion. Es muy utilizado en menus
