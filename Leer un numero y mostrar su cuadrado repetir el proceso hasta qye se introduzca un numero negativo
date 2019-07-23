@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class NumerosOneToTen {
 	
 	public static void main(String[] args) {
+	
+	/*CONSOLA*/
 		Scanner entrada = new Scanner (System.in);
 		int  contador =0;
 		
@@ -14,5 +16,23 @@ public class NumerosOneToTen {
 			System.out.println(contador*contador);
 		}
 		while (contador > 0);
+	/*GRAFICO*/
+
+	int numero,cuadrado;
+		
+		numero = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero"));
+		
+		while (numero >=0) {
+			
+			cuadrado = (int) Math.pow(numero, 2);
+			
+			JOptionPane.showMessageDialog(null, "el numero al cuadrado es " + cuadrado);
+			
+		numero = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero"));
+		}
+	
+	
+	
+	
 	}
 }
