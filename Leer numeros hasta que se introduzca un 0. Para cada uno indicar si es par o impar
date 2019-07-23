@@ -1,1 +1,25 @@
+package bucles;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class NumerosOneToTen {
+	
+	public static void main(String[] args) {
+		int numero;
+		
+		numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numeor"));
+		
+		
+		while (numero!=0) {
+			if (numero %2 ==0) {
+				JOptionPane.showMessageDialog(null, "El numero es par");
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "El numero es impar");
+			}
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numeor"));
+		}
+	}	
+}
