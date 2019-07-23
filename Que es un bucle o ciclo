@@ -1,6 +1,11 @@
-¿Que es?
+  ¿Que es?
 Es aquella secuencia de instrucciones que se van a repetir siempre y cuando se cumpla una determinada condición.
-Características 
+  Características 
 •	Debe llevar una terminación booleana 
 •	Debe lleva una condición
 •	Mientras se cumpla una determinada condición se van a ejecutar un determinado número de instrucciones 
+
+  While
+  •	Solo se ejecuta si la condicion se cumple
+  Do While
+  •	Se ejecuta una vez y despues verifica la condicion. Es muy utilizado en menus
