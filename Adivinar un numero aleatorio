@@ -1,0 +1,39 @@
+package bucles;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class NumerosOneToTen {
+	
+	public static void main(String[] args) {
+		int numero, contador=0, numeroR;
+		boolean bandera = false;
+		numeroR = (int) (Math.random() * 10) + 1;
+		System.out.println(numeroR);
+		numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero que piensas adivinar"));
+		
+		while (bandera != true) {
+			
+			if (numero == numeroR) {
+				JOptionPane.showMessageDialog(null, "Felicidades lo adivinaste");
+				bandera = true;
+				break;
+			}
+
+
+			if (numeroR < numero) {
+				JOptionPane.showMessageDialog(null, "Intenta con uno menor");
+			}
+			
+			if (numeroR > numero){
+				JOptionPane.showMessageDialog(null, "Intenta con uno mayor");
+			}
+			
+			
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero"));
+			contador ++;
+		}
+			JOptionPane.showMessageDialog(null, "Lo haz logrado en  " + contador + " intentos");
+	}	
+}
