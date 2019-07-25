@@ -19,6 +19,13 @@ public class Ciclo {
             numero =  Integer.parseInt(JOptionPane.showInputDialog(null, "Digite el numero " + CantidadNumero));
         }
         
+        
+        /*Agregamos que la cantidad de nuemros sea mayor a 1*/
+        
+        if (CantidadNumero == 0){
+          /// Imprimes no te pases de berga no va a funcionar
+        }
+        
         JOptionPane.showMessageDialog(null, "La media de los numeros es "+media/CantidadNumero);
     }
     
