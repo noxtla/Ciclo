@@ -1,1 +1,21 @@
+package ciclo;
 
+import javax.swing.JOptionPane;
+
+public class Ciclo {
+  
+    public static void main(String[] args) {
+        
+        int numero, CantidadNumero=1,suma = 0;
+        numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite el numero " + CantidadNumero));
+        
+        while (numero != 0) {
+            CantidadNumero++;
+            suma += numero;
+            numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite el numero " + CantidadNumero));            
+        }
+        
+        JOptionPane.showMessageDialog(null, "La suma de los numeros es "+suma);
+    }
+    
+}
