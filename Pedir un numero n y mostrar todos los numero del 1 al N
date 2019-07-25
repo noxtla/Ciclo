@@ -1,1 +1,17 @@
+package ciclo;
 
+import javax.swing.JOptionPane;
+
+public class Ciclo {
+  
+    public static void main(String[] args) {
+        
+        int cantidad;
+        
+        cantidad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la cantidad de numeros"));
+        
+        for (int i=0; i<cantidad; i++){
+            System.out.println(i);
+        }
+    }
+}
