@@ -13,6 +13,9 @@ public class NumerosOneToTen {
 		System.out.println(numeroR);
 		numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero que piensas adivinar"));
 		
+		
+		/*while (numero != numeroR)*/
+		/*Esto mejora el algoritmo*/
 		while (bandera != true) {
 			
 			if (numero == numeroR) {
