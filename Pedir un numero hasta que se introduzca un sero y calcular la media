@@ -1,1 +1,25 @@
+package ciclo;
 
+import javax.swing.JOptionPane;
+
+public class Ciclo {
+  
+    public static void main(String[] args) {
+        
+        int  CantidadNumero=0,numero;
+        float media=0 ;
+    
+        numero =  Integer.parseInt(JOptionPane.showInputDialog(null, "Digite el numero " + CantidadNumero));
+        
+        while (numero != 0) {
+            
+            
+            media += numero;
+            CantidadNumero++;
+            numero =  Integer.parseInt(JOptionPane.showInputDialog(null, "Digite el numero " + CantidadNumero));
+        }
+        
+        JOptionPane.showMessageDialog(null, "La media de los numeros es "+media/CantidadNumero);
+    }
+    
+}
