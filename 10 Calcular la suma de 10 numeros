@@ -1,1 +1,21 @@
+package ciclo;
+
+import javax.swing.JOptionPane;
+
+public class Ciclo {
+  
+    public static void main(String[] args) {
+        
+        int cantidad,i=0,suma=0;
+        
+        
+        
+        for (i=0; i<5; i++){
+           cantidad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la cantidad de numeros"));
+           suma += cantidad;
+           
+        }
+        JOptionPane.showMessageDialog(null, "la suma es" + suma);
+    }
+}
 
