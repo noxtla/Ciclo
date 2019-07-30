@@ -1,1 +1,32 @@
+package ciclo;
 
+import javax.swing.JOptionPane;
+
+public class Ciclo {
+  
+    public static void main(String[] args) {
+        
+        int producto=1,numero=1,i=0;
+        boolean iterador = false;
+        
+        while (iterador != true){
+          if (numero%2 != 0){
+               producto *= numero;
+              System.out.println(producto);
+              ///System.out.println("Esta es la i"+numero);
+              i ++;
+          }
+          
+          if (i == 3){
+              iterador = true;
+          }
+          numero ++;
+        }
+       
+        /*or*/
+              for (int j=0; j<20; j++){
+                  producto *= j;
+              }   
+                
+    }
+}
