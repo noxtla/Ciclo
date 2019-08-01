@@ -1,0 +1,27 @@
+package bucles;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+import javax.swing.SingleSelectionModel;
+
+public class NumerosOneToTen {
+	
+	public static void main(String[] args) {
+			int sueldo, mayores_1000 = 0, suma_sueldos = 0;
+		
+		for (int i=1; i<=5; i++) {
+			sueldo = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el suelro " + i));
+			
+			if (sueldo > 100) {
+				mayores_1000 ++;
+			}
+			
+			suma_sueldos += sueldo;
+		}
+		 ;
+		JOptionPane.showMessageDialog(null, "La cantidad mayores a 1000 son" + mayores_1000);
+		JOptionPane.showMessageDialog(null, "La suma es " + suma_sueldos);
+		
+	}
+}
