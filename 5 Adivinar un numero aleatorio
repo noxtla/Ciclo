@@ -36,6 +36,7 @@ public class NumerosOneToTen {
 			
 			numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero"));
 			contador ++;
+			/*Agrego una nueva linea*/
 		}
 			JOptionPane.showMessageDialog(null, "Lo haz logrado en  " + contador + " intentos");
 	}	
