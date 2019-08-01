@@ -1,0 +1,38 @@
+package bucles;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+import javax.swing.SingleSelectionModel;
+
+public class NumerosOneToTen {
+	
+	public static void main(String[] args) {
+		
+		int numero, cantidadCeros = 0, cantidadNegativos = 0, cantidadPositivos = 0, mediaPos = 0, mediaNeg = 0;
+		
+		for (int i=0; i<10; i++) {
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero" + i));
+			
+			if (numero > 0) {
+				mediaPos += numero;
+				cantidadPositivos  ++;
+				System.out.println(mediaPos);
+				
+			}
+			
+			if (numero < 0) {
+				mediaNeg += numero;
+				cantidadNegativos ++;
+			}
+			if (numero ==0){
+				cantidadCeros ++;
+				
+			}
+			
+		}
+		JOptionPane.showMessageDialog(null, "cantidad de positivos" + mediaPos/cantidadPositivos);
+		JOptionPane.showMessageDialog(null, "cantidad de negativos" + mediaNeg/cantidadNegativos);
+		JOptionPane.showMessageDialog(null, "cantidad de ceros" + cantidadCeros);
+	}
+}
