@@ -1,1 +1,39 @@
+package bucles;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+import javax.swing.SingleSelectionModel;
+
+public class NumerosOneToTen {
+	
+	public static void main(String[] args) {
+		/*
+		 * Dadas las edades y alturas de 5 alumnos, mostrar la edad y la estatura media
+		 * la cantidad de alumnos mayores de 18 años y la cantida de alumnos que miden mas de 1.75
+		 * */
+		
+		int edad, edad_Media = 0, cantidad_Mayores = 0, cantidad_175 = 0;
+		float altura, estaturaMedia = 0;
+		
+		for (int i=0; i<=3; i++) {
+			edad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la edad " + i));
+			altura = Float.parseFloat(JOptionPane.showInputDialog("Ingresa la estatura" + i));
+			
+			if (edad > 18) {
+				cantidad_Mayores++;
+			}
+			
+			if (altura > 1.75) {
+				cantidad_175++;
+			}
+			
+			estaturaMedia += altura;
+			edad_Media += edad;
+			
+		}
+		
+		JOptionPane.showMessageDialog(null, "La altura media es " + estaturaMedia/5);
+		JOptionPane.showMessageDialog(null, "La edad media es " + edad_Media/5);
+	}
+}
