@@ -1,1 +1,22 @@
+package bucles;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class NumerosOneToTen {
+	
+	public static void main(String[] args) {
+		
+		int numero,factorial=1;
+		
+		
+		numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero"));
+		
+		/*Tambien se puede i<=numero*/
+		for (int i =1; i<numero+1; i++ ) {
+			factorial *= i;
+		}
+			JOptionPane.showMessageDialog(null, factorial);
+	}
+}
