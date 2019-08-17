@@ -1,1 +1,44 @@
+package javaapplication1;
 
+import javax.swing.JOptionPane;
+
+public class JavaApplication1 {
+    ///Se piden 5 facturas introducidas +
+    ///Facturacion total +
+    ///cantidad litros vendidos del articulo 1
+    ///cuntas facturas se emitieron de mas de 600+
+
+    public static void main(String[] args) {
+        int codigo_articulo,cantidad_facturas=1, factura_600=0; 
+        float precio_litros, cantidad_vendida_litros,
+                litros_codigo1=0, facturacion_total=0,numero=0;
+        
+        
+        while (cantidad_facturas <=6) {
+            codigo_articulo = Integer.parseInt(JOptionPane.
+                    showInputDialog("Ingrese el codigo"));
+           
+            cantidad_vendida_litros = Integer.parseInt(JOptionPane.
+                    showInputDialog("Ingrese los litros"));
+            
+            precio_litros = Float.parseFloat(JOptionPane.
+                    showInputDialog("Ingrese el precio x litro"));
+             
+              if(numero > 600){
+                factura_600 ++;
+            }
+             
+             if (codigo_articulo == 1){
+                  litros_codigo1 =+ cantidad_vendida_litros; 
+             }
+            
+            facturacion_total = cantidad_vendida_litros * precio_litros;  
+
+            cantidad_facturas ++;
+        }
+        
+        System.out.println("cantidad 600 " + factura_600);
+        System.out.println("cantidad todal " + facturacion_total);
+        System.out.println("Cantidad litros" +litros_codigo1);
+    }      
+}
